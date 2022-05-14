@@ -1,0 +1,54 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">    
+      <!-- <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">name</th>
+            <th scope="col">email</th>
+            <th scope="col">id</th>
+            <th scope="col">department</th>
+            <th scope="col">phone number</th>
+            <th scope="col">date of joining</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let employee of employees;let i = index">
+            <th scope="row">{{i+1}}</th>
+            <td>{{employee.empName}}</td>
+            <td>{{employee.emailId}}</td>
+            <td>{{employee.empId}}</td>
+            <td>{{employee.department}}</td>
+            <td>{{employee.phoneNumber}}</td>
+            <td>{{employee.doj}}</td>
+          </tr>       
+        </tbody>
+      </table> -->
+      <div class="form-group">
+        <input type="search" placeholder="search" (input)="filterData($event)" class="form-control mt-4">
+
+      </div>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">user Id</th>
+            <th scope="col">title</th>
+            <th scope="col">body</th>        
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let record of records;let i = index">
+            <th scope="row">{{record.id}}</th>
+            <td>{{record.userId}}</td>
+            <td>{{record.title}}</td>
+            <td>{{record.body}}</td>           
+          </tr>                
+        </tbody>
+      </table>
+    </div>
+    
+  </div>
+
+</div>
